@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #d5d4df;
+    font-family: 'Arial', 'Thebuchet', 'Lucida grande','sans-sefir';
+    color: #000305;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: #c74350;
+    transition: .4s linear;
+    padding: 0 1px;
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: #fff;    
+    background-color: #c74350;
+    text-decoration: none;/* убирает линии, но не жирное, после 6 не кушает */
+    transition: color 0.25s linear, background-color .4s linear; /* vse ssilki "a" */
+}
+
+.container{
+    max-width: 900px;
+    width: 96%;
+    margin: 0 auto 0 auto;
+} /*vse saiti v conteinere*/
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    max-resolution: 20px;
+}
+
+.header{
+    padding: 30px 0 10px 0;
+}
+.title,
+.subtitle,
+.header a
+{
+ display: block;
+}
+
+.title {
+font-size: 50px;
+
+}
+
+.subtitle{
+    font-size: 18px;
+}
+
+.header a{
+    color:#c74350;
+    text-decoration: none;
+}
+
+header a:hover,
+header a:focus,
+header a:active{
+    background-color: rgba(0,0,0,0);
+    color: #c74350;
+}
+
+h2, h3, h4{
+    font-weight: normal;
+    margin: 5px;
+}
+h2{
+ font-size: 24px;
+ color: #c74350 ;
+ margin: 0;
+}
+
+h3{
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+h3 a{
+    text-decoration: none;
+    color: #000305
+}
+h4{
+    font-size: 20px;
+    color: #000305;
+}
+
+h4 a{
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+}
+.articles article{
+    padding: 0 0 10px;
+}
+/*     
+    .articles article:not(:last-of-type){
+        border-bottom: 1px solid #eee;
+    } */
+    
+        /* .articles article:not(:first-of-type){
+            border-bottom: 1px solid #eee;
+    } */
+
+    .articles article + article{
+        border-top: 1px solid #eeeeee; }
+.nav {
+            width: 50%;
+            padding: 0;
+            list-style: none;
+        }
+.nav a{
+    width: 50%;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000305;
+    border-bottom: 1px solid #f4f3e3
+    
+}
+.nav li{
+    border-bottom: 1px solid #f5f4f3;
+
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+    color: #f5f4f3
+}
+
+footer section {
+    display: flex;
+}
+footer section div:first-of-type{
+    width: 40%;
+
+}
+footer section h4{
+    margin: 0;
+    line-height: 1;
+}
+.copyright {
+    text-align: right;
+    padding: 10px 0;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+aside{
+    flex:1 0 auto;
+    padding-right: 30px; 
+}
